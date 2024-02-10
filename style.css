@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #81689D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quiz-app{
+    width: 38%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 40px;
+    transition: all 1s;
+}
+.quiz-app h1{
+    color: #7F27FF;
+    padding: 25px 2px;
+    font-weight: 500;
+    font-size: 40px;
+    border-bottom: 1.3px solid #81689D;
+    width: 85%;
+    margin: auto;
+}
+.quiz-app h2{
+    color: #9F70FD;
+    padding: 15px 38px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-container button{
+    width: 86%;
+    padding: 10px 12px;
+    margin: 10px 15px;
+    text-align: left;
+    border: none;
+    outline: none;
+    border: 1px solid #81689D;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.25s;
+    background-color: #fff;
+    color: #81689D;
+}
+.btn-container button:hover:not([disabled]){
+    background-color: #8f5cdb;
+    color: #fff;
+}
+.btn-container button:disabled{
+    cursor: no-drop;
+}
+.next-btn-container{
+    display: flex;
+    justify-content: center;
+}
+.next-btn-container .next-btn{
+    padding: 8.5px 37px;
+    background-color: #7F27FF;
+    border: none;
+    outline: none;
+    border: 2px solid #7F27FF;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.23s;
+    display: none;
+}
+.next-btn-container .next-btn:hover{
+    background-color: #fff;
+    color: #7F27FF;
+    border: 2px solid #7F27FF;
+}
+.correct{
+    background-color: #00800097;
+    color: #fff;
+}
+.incorrect{
+    background-color: #ff6d6d;
+    color: #fff;
+}
